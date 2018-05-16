@@ -1,0 +1,53 @@
+/*//RESET*/
+*{
+  margin:0
+  padding:0
+}
+/*flex-container styles*/
+.box-container{
+  display:flex;
+  background-color: grey;
+  height: 150px;
+  width:100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Перестроювання блоків по вертикалі і центрування*/
+@media all and (max-width:480px) {
+.box-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  }
+}
+.box-container > div > p{
+    margin:auto;
+}
+.box-container > div {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: 2px solid blue;
+}
+/*flex-container styles ends*/
+/*flex-item styles*/
+.block-1{
+  background-color: pink;
+}
+.block-2{
+  background-color: blue;
+}
+.block-3{
+  background-color: purple;
+}
+.block-4{
+  background-color: green;
+}
+.block-5{
+  background-color: red;
+}
+.block-6{
+  background-color: yellow;
+}
+/*flex-item styles ends*/
